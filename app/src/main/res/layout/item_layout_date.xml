@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Type or scroll for a date:" />
+
+    <SearchView
+        android:id="@+id/SearchViewDateID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="date"
+        android:background="#EFEAEA" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerYear"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#FBCDCD"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/buttonSelectYear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FACECE"
+        android:text="Select"
+        android:textColor="@color/black" />
+
+</LinearLayout>

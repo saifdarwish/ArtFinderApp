@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/GalleryFilterID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:text="Galleryfilter"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/GalleryRecyclerID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/GalleryRecyclerID"
+        android:layout_width="353dp"
+        android:layout_height="606dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/galleryNextPageButton"
+        app:layout_constraintEnd_toEndOf="@id/GalleryFilterID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GalleryFilterID" />
+
+    <Button
+        android:id="@+id/galleryNextPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F1C7C7"
+        android:onClick="galleryNextPage"
+        android:text="Next page"
+        android:textColor="#100E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/galleryCurrentPageID"
+        app:rippleColor="#F1CFCF" />
+
+    <Button
+        android:id="@+id/galleryPreviousPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#F1C7C7"
+        android:onClick="galleryPreviousPage"
+        android:text="Previous page"
+        android:textColor="#100E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/galleryCurrentPageID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="48dp"
+        android:background="#F1C7C7"
+        android:text="currentPage"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/galleryPreviousPageButton" />
+
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="177dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F1C7C7"
+        android:onClick="navigateToHome"
+        android:text="Back to Home page"
+        android:textColor="#100E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

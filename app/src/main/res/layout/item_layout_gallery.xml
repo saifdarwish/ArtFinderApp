@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="#FACECE">
+
+
+    <TextView
+        android:id="@+id/galleryFilterID"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:text="Choose a gallery:"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/galleryListViewID"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/loadMoreID"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FA9C9C"
+        android:text="Load more"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/galleryCounterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="galleryCounter" />
+</LinearLayout>
