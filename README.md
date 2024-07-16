@@ -1,5 +1,3 @@
-## Readme
-
 # Art Finder App
 
 ### Overview
